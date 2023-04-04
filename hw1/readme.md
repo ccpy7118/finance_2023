@@ -14,7 +14,6 @@ The schedule shall have five columns:
 (3) Interest (the interest part of each payment), 
 (4) Principal (the principal part of each payment), 
 (5) Remaining principal. 
-
 For example, if L = 10,000,000, r1 = 8%, r2 = 3%, n1 = 120, n = 20, and m = 12, the example output file is here and the total interest is 8593339.37. 
 IMPORTANT notes: 
 (1) The Time column must be integers (no floating-point numbers). 
@@ -43,7 +42,6 @@ This means the value of the first row will be 0, 0, 0, 0, L.
 
 例如，
 如果L = 10,000,000，r 1 = 8%，r 2 = 3%， n 1 = 120，n = 20，m = 12，示例輸出文件在這裡，總利息為 8593339.37。
-
 重要提示：
 (1)時間列必須是整數（無浮點數）。
 (2) Payment、Interest、Principal和Remaining principal列必須是小數點後兩位的浮點數。
