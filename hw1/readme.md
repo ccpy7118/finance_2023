@@ -1,4 +1,5 @@
 Write a program to generate an amortization schedule for repaying a loan. There are two interest rates. 
+
 Inputs: 
 (1) L (loan amount in dollars), 
 (2) r1 (annual interest rate in percent for the first n1 periods, so 12 instead of 0.12), 
