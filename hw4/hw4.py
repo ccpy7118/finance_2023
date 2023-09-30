@@ -1,5 +1,6 @@
 import numpy as np
 
+
 def american_put_price(S, K, r, s, T, n, N):
     dt = T / n
     discount_factor = np.exp(-r * dt / 100)  # Convert interest rate to decimal
@@ -46,24 +47,22 @@ def generate_stock_paths(S, r, s, T, n, N):
     
     return paths
 
+# Example usage
+# S = 100  # Stock price
+# K = 95  # Strike price
+# r = 1  # Interest rate (in percent)
+# s = 10  # Volatility (in percent)
+# T = 1  # Time to maturity in years
+# n = 100  # Number of time steps
+# N = 10000  # Number of simulation paths
 
-# Option Price: 1.5405939732907692
-# Standard Error: 0.026594089898247374
-S = 17000  # Stock price
-K = 17050  # Strike price
-r = 5  # Interest rate (in percent)
-s = 15  # Volatility (in percent)
-T = 0.01  # Time to maturity in years
-n = 100  # Number of time steps
-N = 10000  # Number of simulation paths
-
-# S = int(input( '請輸入 股票價格 S:' ))
-# K = int(input( '請輸入 執行價格 K:' ))
-# r = int(input( '請輸入 利率 r (例如利率為 5%，輸入值為 5):' ))   # 5%
-# s = int(input( '請輸入 年度波動率 s (例如波動率為 30%，輸入值為 30):' ))  # 30%
-# T = float(input( '請輸入 到期時間年 T:' ))
-# n = int(input( '請輸入 時間步數 n:' ))
-# N = int(input( '請輸入 模擬路徑數 N:' ))
+S = int(input( '請輸入 股票價格 S:' ))
+K = int(input( '請輸入 執行價格 K:' ))
+r = int(input( '請輸入 利率 r (例如利率為 5%，輸入值為 5):' ))   # 5%
+s = int(input( '請輸入 年度波動率 s (例如波動率為 30%，輸入值為 30):' ))  # 30%
+T = float(input( '請輸入 到期時間年 T:' ))
+n = int(input( '請輸入 時間步數 n:' ))
+N = int(input( '請輸入 模擬路徑數 N:' ))
 
 option_price, standard_error = american_put_price(S, K, r, s, T, n, N)
 print("Option Price:", option_price)
